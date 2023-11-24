@@ -43,9 +43,9 @@ function aut(){
     }
 } 
 
-// document.getElementById('todownload').onclick = function() {
-//     let text = [score, rubli, RubUpCost, BomjCost];
-//     let myData = 'data:application/txt;charset=utf-8,' + encodeURIComponent(text);
-//     this.href = myData;
-//     this.download = 'data.txt';
-// }
+document.getElementById('todownload').onclick = function() {
+    let text = [score, rubli, RubUpCost, BomjCost];
+    let myData = 'data:application/txt;charset=utf-8,' + encodeURIComponent(text);
+    this.href = myData;
+    this.download = 'data.txt';
+}

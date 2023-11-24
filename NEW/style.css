@@ -68,6 +68,8 @@ body{
 
 .table_price td, .table_price th {
   padding: 10px;
+  background: #E5E5E5;
+  border-top: 1px black solid;
 }
 .table_price th {
   text-align: left;
@@ -90,4 +92,19 @@ body{
   box-shadow: none;
   top: 2px;
   left: 2px;
+}
+.find{
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url('https://media.discordapp.net/attachments/888096136676667472/1176915562803253309/1kop_2017_v2_mmd_png.png?ex=65709b08&is=655e2608&hm=fbcfd0fd23b1e5173578aa8c91e82180f0f87ac77a7daa8a5b9115297565f445&=&format=webp');
+  background-size: cover;
+}
+.find:hover {
+  opacity: 0.8;
+}
+
+.find:active {
+  transform: scale(0.95);
 }
