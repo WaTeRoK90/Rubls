@@ -20,7 +20,7 @@ function rubup(){
     rubli++;
     score-= RubUpCost;
     // k+=0.5;
-    RubUpCost = RubUpCost*1.75;
+    RubUpCost = Math.floor(RubUpCost*2);
     document.getElementById("UpCost").innerHTML = RubUpCost + " Рублёф";
     }
 }
@@ -30,7 +30,7 @@ function bomj(){
     rubli+=10;
     score -= BomjCost;
     // k+=0.5;
-    BomjCost = BomjCost*1.75;
+    BomjCost += Math.floor(BomjCost*2);
     document.getElementById("BomjCost").innerHTML =  BomjCost + " Рублёф";
     }
 }
