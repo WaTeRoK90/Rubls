@@ -20,7 +20,7 @@ function rubup(){
     rubli++;
     score-= RubUpCost;
     // k+=0.5;
-    RubUpCost = RubUpCost*1.5;
+    RubUpCost = RubUpCost*1.75;
     document.getElementById("UpCost").innerHTML = RubUpCost + " Рублёф";
     }
 }
@@ -30,7 +30,7 @@ function bomj(){
     rubli+=10;
     score -= BomjCost;
     // k+=0.5;
-    BomjCost = BomjCost*1.5;
+    BomjCost = BomjCost*1.75;
     document.getElementById("BomjCost").innerHTML =  BomjCost + " Рублёф";
     }
 }
@@ -42,6 +42,38 @@ function aut(){
         document.getElementById("up").innerHTML = "Up";
     }
 } 
+
+function save(){
+
+
+    localStorage.setItem('save_rubli', score);
+    localStorage.setItem('save_up1', rubli);
+    localStorage.setItem('save_up2', RubUpCost);
+    localStorage.setItem('save_bomj1', BomjCost);
+    }
+function load(){
+
+    score = JSON.parse(localStorage.getItem('save_rubli'));
+    rubli = JSON.parse(localStorage.getItem('save_up1'));
+    RubUpCost = JSON.parse(localStorage.getItem('save_up2'));
+    BomjCost = JSON.parse(localStorage.getItem('save_bomj1'));
+    document.getElementById("UpCost").innerHTML = RubUpCost + " Рублёф";
+    document.getElementById("BomjCost").innerHTML = BomjCost + " Рублёф";
+    
+}
+
+if (localStorage.getItem('save_rubli')  == undefined){
+    localStorage.setItem('save_rubli', score);
+}
+if (localStorage.getItem('save_up1') == undefined){
+    localStorage.setItem('save_up1', rubli);
+}
+if (localStorage.getItem('save_up2') == undefined ){
+    localStorage.setItem('save_up2', RubUpCost);
+}
+if (localStorage.getItem('save_bomj1') == undefined) {
+    localStorage.setItem('save_bomj1', BomjCost);
+}
 
 // document.getElementById('todownload').onclick = function() {
 //     let text = [score, rubli, RubUpCost, BomjCost];

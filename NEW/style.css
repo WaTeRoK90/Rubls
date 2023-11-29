@@ -1,6 +1,8 @@
 body{
     text-align: center;
-    background-image: url(https://ru-moneta.ru/upload/moneta-ru/100-rub-1997-a.jpg);
+    background-image: url(img/2d7e12e9028e4071a606b6677f55ac83.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 .score{
     font-family: 'Kelly Slab', sans-serif;
@@ -42,6 +44,7 @@ body{
     color: hsl(300,100%,30%);
   }
 .table_price {
+  border-radius: 5px;
   margin-top: 20px;
   display: inline-block;
   border-collapse: collapse;
@@ -92,10 +95,11 @@ body{
   box-shadow: none;
   top: 2px;
   left: 2px;
+
 }
 .find{
-  width: 100px;
-  height: 100px;
+  width: 107px;
+  height: 105px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
   background-image: url('https://media.discordapp.net/attachments/888096136676667472/1176915562803253309/1kop_2017_v2_mmd_png.png?ex=65709b08&is=655e2608&hm=fbcfd0fd23b1e5173578aa8c91e82180f0f87ac77a7daa8a5b9115297565f445&=&format=webp');
@@ -107,4 +111,39 @@ body{
 
 .find:active {
   transform: scale(0.95);
+}
+
+.table_save {
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  display: inline-block;
+}
+
+.save{
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgb(87, 86, 88);
+  position: relative;
+  color: white;
+}
+
+.save:hover {
+  box-shadow: none;
+  top: 2px;
+  left: 2px;
+}
+
+.load{
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgb(87, 86, 88);
+  position: relative;
+  color: white;
+}
+
+.load:hover {
+  box-shadow: none;
+  top: 2px;
+  left: 2px;
 }
